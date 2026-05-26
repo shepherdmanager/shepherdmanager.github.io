@@ -9,7 +9,7 @@ GitHub Pages vanity URL for **Shepherd Manager** — a privacy-first pastoral ca
 ```
 User visits shepherdmanager.github.io
   → GitHub Pages serves index.html (iframe wrapper)
-    → iframe loads https://atlas-server.taila932a4.ts.net/
+    → iframe loads https://shepherdmanager.taila932a4.ts.net/
       → Tailscale Funnel (TLS) → Caddy → shepherd-app container
 ```
 
@@ -41,7 +41,7 @@ cat > index.html << 'HTML'
   </style>
 </head>
 <body>
-  <iframe src="https://atlas-server.taila932a4.ts.net/<path>" title="My App Name"></iframe>
+  <iframe src="https://shepherdmanager.taila932a4.ts.net/<path>" title="My App Name"></iframe>
 </body>
 </html>
 HTML
